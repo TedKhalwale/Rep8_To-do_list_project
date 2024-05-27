@@ -1,33 +1,65 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.navbar {
+    background-color: royalblue;
+    width: 100%;
+    overflow: hidden;
+}
+
+#navbarSupportedContent a:hover {
+    background-color: white;
+}
+
+/* button {
+
+} */
 
 .container {
     height: 100vh;
-    text-align: center;
+    /* text-align: center; */
     
-    background-image:url(../Media/Images/background.jpg) ;
+    /* background-image:url(../Media/Images/background.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: lighten;
     background-color: grey;
     color: rgb(0, 0, 0);
-    overflow: hidden;
+    overflow: hidden; */
+}
+
+#homePage {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1;
 }
 
 .homepage-text {
-    margin-top: 23vh;    
+    /* margin-top: 10vh;     */
+    max-width: 600px;
 }
 
 .homepage-text h1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 57px;
+    color: royalblue;
+    font-weight: 500;
+}
+
+.square-1 {
+    width: 15px;
+    height: 15px;
+    background-color: royalblue;
+    display: inline-block;
+    margin: 15px;
 }
 
 .homepage-text h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 40px;
 }
 
@@ -46,11 +78,12 @@
     background-color: #f9f9f9;
 }
 input[type="text"] {
-    width: 400px;
+    width: 410px;
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid royalblue;
+    border-radius: 5px;
+    margin-bottom: 7px;
 }
 button {
     padding: 10px 20px;
@@ -59,13 +92,38 @@ button {
     cursor: pointer;
 }
 #addBtn {
-    background-color: #4caf50;
+    background-color: royalblue;
     color: white;
+    width: 200px;
+    height: 50px;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 8px;
 }
+#addBtn:hover {
+    color: royalblue;
+    background-color: white;
+    border: 1px solid royalblue;
+    transition: .3s;
+}
+
 #deleteBtn {
-    background-color: #f44336;
-    color: white;
+    background-color: white;
+    color: royalblue;
+    width: 200px;
+    height: 50px;
+    margin: 3px;
+    border: 1px solid royalblue;
+    border-radius: 8px;
 }
+
+#deleteBtn:hover {
+    color: white;
+    background-color: royalblue;
+    border: 1px solid white;
+    transition: .3s;
+}
+
 ul {
     list-style-type: none;
     padding: 0;

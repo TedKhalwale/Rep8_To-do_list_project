@@ -15,13 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     deleteBtn.addEventListener("click", function() {
-        const selectedTasks = taskList.querySelectorAll("li");
+        const selectedTasks = taskList.querySelectorAll("li.selected");
         selectedTasks.forEach(task => {
-            if (task.classList.contains("selected")) {
-                task.remove();
-            }
+            task.remove();
         });
     });
+    
 
     taskList.addEventListener("click", function(e) {
         if (e.target.tagName === "LI") {

@@ -4,20 +4,79 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MY TO-DO LIST</title>
+        <link rel="shortcut icon" href="./Media/Images/logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./Styles/index.css">
     </head>
     <body>
         <div class="container">
-            <div class="homepage-text">
-                <h1>MY TO-DO LIST</h1>
-                <h2>Welcome To Pelikan To-Do List Organizer</h2>
-                <h3>Just type what you want to add to or delete from your to-do list</h3>
-                <input type="text" id="taskInput" placeholder="Enter task...">
-                <button id="addBtn">Add</button>
-                <button id="deleteBtn">Delete</button>
-                <ul id="taskList">
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./Media/Images/logo.png" width="70px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">My Day</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./Media/Images/star-regular-24.png" width="20px">Important</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./Media/Images/bookmark-star-solid-24.png" width="20px">Tasks</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./Media/Images/calendar-star-regular-24.png" width="20px">Planned</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Assigned
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">To me</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">To my team</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <!-- <hr> -->
+
+            <section id="homePage">
+                <div class="homepage-text">
+                    <h1>MY TO-DO LIST</h1>
+                    <div class="squares">
+                        <span class="square-1"></span>
+                        <span class="square-1"></span>
+                        <span class="square-1"></span>
+                    </div>
+                    <h2>Welcome To Pelikan To-Do List Organizer</h2>
+                    <div class="squares">
+                        <span class="square-1"></span>
+                        <span class="square-1"></span>
+                        <span class="square-1"></span>
+                    </div>
+                    <h3>Just type what you want to add to or delete from your to-do list</h3>
+                    <input type="text" id="taskInput" placeholder="Type your task here...">
+                    <button id="addBtn">Add Task</button>
+                    <button id="deleteBtn">Delete Task</button>
+                    <ul id="taskList">
+                    </ul>
+                </div>
+                <div class="homePage-pics">
+                    <img src="./Media/Images/undraw_chore_list_re_2lq8.png" alt="" width="700px">
+                </div>
+            </section>
+            
             
         </div>
         <div id="container"></div>
@@ -25,6 +84,7 @@
         
         
          <!-- SCRIPTS  -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="./Scripts/index.js"></script>
     </body>
 
