@@ -155,4 +155,21 @@ li {
     .homePage-pics {
         width: 200px;
     }
+    .square-1 {
+        width: 5px;
+        height: 5px;
+        background-color: royalblue;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .homepage-text h2 {
+        /* margin-bottom: 10px; */
+        font-size: 15px;
+    }
+    
+    .homepage-text h3 {
+        /* margin-bottom: 30px; */
+        font-size: 10px;
+    }
     }
